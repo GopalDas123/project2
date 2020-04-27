@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* margin:60px 5% 0px 5%; */
+            margin: 0px;
+            padding:0px;
+            font-size: 15px;
+            color: white;
+            font-family:sans-serif;
+        }
+        .mainn{
+            display: inline-block;
+            background-color: rgb(3, 120, 167);
+            height: 870px;
+            width: 63%;
+            margin-left:235px;
+            margin-top: 20px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .left{
+            display: inline-block;
+            height: 900px;
+            width:150px;
+            
+        }
+        .right{
+            display: inline-block;
+            height: 700px;
+            width:600px;
+            vertical-align: top;
+
+        }
+        .left-items{
+            margin: 14px 0px 22px 10px ;
+
+        }
+        .right-items{
+            margin: 10px 0px 15px 10px ;
+
+        }
+        .vv{
+            height: 10px;
+            padding:5px;
+        }
+        #add{
+            margin-top:124px;
+        }
+        .qual{
+            margin-top: 42px;
+        }
+        .appl{
+            margin-top: 140px;
+        }
+        .PP{
+            color: slateblue;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <center><img src="Saylani-logo.png" alt=""></center>
+   <P class="PP"><ins>STUDENT REGISTRATION FORM</ins></P>
+   <form action=""> 
+   <div class="mainn">
+            <div class="left">
+                            <p class="left-items">FIRST NAME</p>
+                            <p class="left-items">LAST NAME</p>
+                            <p class="left-items">DATE OF BIRTH</p>
+                            <p class="left-items">EMAIL ID</p>
+                            <p class="left-items">MOBILE NUMBER</p>
+                            <p class="left-items">GENDER</p>
+                            <p class="left-items">ADDRESS</p>
+                        <div  id="add">
+                            <p class="left-items">CITY</p>
+                            <p class="left-items">PIN CODE</p>
+                            <p class="left-items">STATE</p>
+                            <p class="left-items">COUNTRY</p>
+                            <p class="left-items">HOBBIES</p>
+                            <div class="qual">
+                                <p class="left-items">QUALIFICATION</p>
+                                <div class="appl">
+                                    <p class="left-items">COURSES<BR>APPLIED FOR</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+            </div>
+            <div class="right">
+                <p class="right-items"><input class="vv" type="text" maxlength="30" placeholder="Enter first name" >(max 30 characters a-z and A-Z)</p>
+                <p class="right-items"><input class="vv" type="text" maxlength="30" placeholder="Enter last name" >(max 30 characters a-z and A-Z)</p>
+                <p class="right-items"><input class="vv" type="date"></p>
+                <p class="right-items"><input class="vv" type="text" placeholder="Enter email address" ></p>
+                <p class="right-items"><input class="vv" type="number" maxlength="10" placeholder="Enter mobile number" >(10 digit number)</p>
+                <p class="right-items">Male<input name="gender" value="male" type="radio">Female<input name="gender" value="female" type="radio"></p>
+                <p class="right-items"><textarea name="" id="" cols="45" rows="8"></textarea></p>
+                <p class="right-items"><input class="vv" type="text" maxlength="30" placeholder="Enter city name" >(max 30 characters a-z and A-Z)</p>
+                <p class="right-items"><input class="vv" type="number" maxlength="6" placeholder="Enter pincode" >(6 digit number)</p>
+                <p class="right-items"><input class="vv" type="text" maxlength="30" placeholder="Enter state" ></p>
+                <p class="right-items"><input class="vv" type="text" placeholder="Enter country" ></p>
+                <p class="right-items">Drawing<input type="checkbox">Singing<input type="checkbox">Dancing<input type="checkbox">Sketching<input type="checkbox"><br>Others<input type="checkbox"><input type="text" name="" id=""></p>            
+    
+                <table  class="right-items">
+                    <tr>
+                        <th>SI.No</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>(10 char max)</td>
+                        <td>(upto 2 decimal)</td>
+
+                    </tr>
+                    
+                </table>
+                <p>BCA <input type="radio">
+                B.com <input type="radio">
+                B.Sc <input type="radio">
+                B.A <input type="radio"></p>
+            </div>
+            <div style="margin-left:340px; margin-top: -70px;">
+                <input type="reset" value="Reset">
+                <a href="thank.html"><input type="button" value="Submit"></a>
+            </div>
+
+
+
+    </div>
+</form> 
+</body>
+</html>
+
+
